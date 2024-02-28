@@ -26,16 +26,35 @@
             padding: 20px;
             text-align: center;
         }
-        h1 {
-            color: #333;
-            font-size: 36px;
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+        }
+        nav {
             margin-bottom: 20px;
         }
-        p {
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 14px;
             color: #666;
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
         }
         .button {
             display: inline-block;
@@ -50,16 +69,88 @@
         .button:hover {
             background-color: #0056b3;
         }
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: left;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin-top: 10px;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to AceThetics</h1>
-        <p>We offer elegant and stylish outfits suitable for both formal and casual occasions. Our clothing ensures you have a comfortable yet stylish look that suits any event.</p>
-        <a href="#" class="button">Shop Now</a>
-    </div>
-</body>
-</html>
+    <header>
+        <div class="container">
+            <h1>Welcome to AceThetics</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We offer elegant and stylish outfits suitable for both formal and casual occasions. Our clothing ensures you have a comfortable yet stylish look that suits any event.</p>
+            <a href="#products" class="button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="category">
+                <h3>Categories:</h3>
+                <ul>
+                    <li><a href="#formal">Formal</a></li>
+                    <li><a href="#casual">Casual</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                </ul>
+            </div>
+            
+            <div class="product" id="formal">
+                <img src="formal1.jpg" alt="Formal Outfit 1">
+                <h3>Formal Outfit 1</h3>
+                <p class="caption">Caption for Formal Outfit 1</p>
+            </div>
+            <div class="product" id="casual">
+                <img src="casual1.jpg" alt="Casual Outfit 1">
+                <h3>Casual Outfit 1</h3>
+                <p class="caption">Caption for Casual Outfit 1</p>
+            </div>
+            <div class="product" id="accessories">
+                <img src="accessory1.jpg" alt="Accessory 1">
+                <h3>Accessory 1</h3>
+                <p class="caption">Caption for Accessory 1</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries or assistance, please contact us:</p>
+            <p>Email: zerolzeri07@gmail.com</p>
+            <p>Phone: 011-28180058</p>
+            <p>Operating
+
 
 </body>
 </html>
