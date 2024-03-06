@@ -10,257 +10,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AceThetics - Elegant & Casual Clothing</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/h1.png" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <!--===== SCROLL REVEAL =====-->
+    <script src="main.js"></script>
+    <title>Azrul Azri</title>
 </head>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a;
-    color: #fff;
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #007bff;
-}
-
-.section {
-    padding: 40px 0;
-}
-
-.section:nth-child(even) {
-    background-color: #2c2c2c;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-.product {
-    display: inline-block;
-    width: 30%;
-    margin: 20px;
-    padding: 20px;
-    background-color: #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: left;
-}
-
-.product img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.product h3 {
-    margin-top: 10px;
-}
-
-.caption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #ccc;
-}
-
-.category {
-    margin-bottom: 30px;
-}
-  
-footer {
-    background-color: #333;
-    color: #ccc;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.social-links {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social-links li img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    transition: border-color 0.3s ease;
-}
-
-.social-links li img:hover {
-    border-color: #007bff;
-}
-/* Previous CSS styles remain the same */
-
-.product-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.product {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: left;
-}
-
-.product img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.product h3 {
-    margin-top: 10px;
-    color: #fff;
-}
-
-.product p {
-    color: #ccc;
-}
-
-.price {
-    font-weight: bold;
-    color: #007bff;
-}
-
-</style>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to AceThetics</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <header class="l-header">
+        <nav class="nav bg-grid">
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#home" class="nav-link home active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#skills" class="nav-link skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#projects" class="nav-link projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href = "#" onclick="myFunction()">☼</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+              </div>
+
+              <div class="nav-toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+              </div>
+        </nav>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We offer elegant and stylish outfits suitable for both formal and casual occasions. Our clothing ensures you have a comfortable yet stylish look that suits any event.</p>
-            <a href="#products" class="button">Shop Now</a>
-        </div>
-    </section>
+    <main class="l-main">
+        <!--HOME-->>
+        <section class="home bd-grid section" id="home">
+            <div class="home-data">
+                <h2 class="home-title">
+                    Hello,<br />I am <span class="home-title-color">Azrul Azri Azmi</span><br />
+                    <span id="jobTitle">Graphic Designer</span> 
+                </h2>
+        
+                <div class="centered-button">
+                    <a href="https://drive.google.com/file/d/1H08bwDDtPX0422uX1svMEH1xnSEEX1Zt/view?usp=sharing" target="_blank" class="button">Resume</a>
+                </div>
+                
+                <div class="home-social">
+                    <a href="https://www.linkedin.com/in/azrul-azri-0974161a3/" target="_blank" class="home-social-icon"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/Ajerulz" target="_blank" class="home-social-icon"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+        
+            <div class="home-img">
+                <img src="profile.jpeg" alt="" width="auto" height="auto"/>
+            </div>
+        </section>
+        
+        
+        
+          
 
-    <section id="products" class="section">
-        <div class="container">
-            <h2>Our Products</h2>
+        <!--ABOUT-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+      
+            <div class="about-container bd-grid">
+              <div class="about-img">
+                <img src="assets/img/PROFILEPIC" alt="" />
+              </div>
+      
+              <div style="text-align: center">
+                <h2 class="about-subtitle">I am Azrul Azri</h2>
+                <p class="about-text">
+                    As a dynamic and innovative creative designer, I offer a unique blend of artistic flair, 
+                    technical proficiency, and a relentless drive for excellence. With a passion for pushing 
+                    boundaries and a track record of delivering outstanding results, I thrive on challenges 
+                    and am dedicated to exceeding client expectations.
+                </p>
+                <br />
+                
+                <p>
+                    get in touch through >zerolzeri07@gmail.com
+                    <i style="color: #4070f4; font-size: 1.2rem; cursor: pointer" class="bx bx-copy" id="copy"></i>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--EDUCATION-->
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+                <div class="education-container bd-grid">
             
-        <div class="product-gallery">
-            <div class="product">
-                <img src="product1.jpg" alt="Product 1">
-                <h3>Product Name 1</h3>
-                <p class="description">Description of Product 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="price">$49.99</p>
+                <div class="education-data">
+                    <div class="education-names">
+                    <!-- <i class="bx bxl-html5 skills-icon"></i> -->
+                    <span class="education-name">BSC (hons) Multimedia Computing</span> 
+                    <p class="education-platform ">Liverpool John Moores University @ YPC International College</p>
+                    <p class="education-duration ">2020 - Present</p>
+        
+                    </div>
+                </div>
+                </div>
+                <div class="education-container bd-grid">
+            
+            <div class="education-data">
+                <div class="education-names">
+                <!-- <i class="bx bxl-html5 skills-icon"></i> -->
+                <span class="education-name">SPM</span>
+                <p class="education-platform ">SMK (L) Methodist Jalan Hang Jebat</p>
+                <p class="education-duration ">2015 - 2019</p>
+                </div>
             </div>
-            <div class="product">
-                <img src="product2.jpg" alt="Product 2">
-                <h3>Product Name 2</h3>
-                <p class="description">Description of Product 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="price">$39.99</p>
             </div>
-            <!-- Add more products as needed -->
-        </div>
-        </div>
-    </section>
+          </section>
 
-    <section id="testimonials" class="section">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <p>"I absolutely love the outfits from AceThetics! They are so elegant and comfortable, perfect for any occasion."</p>
-                <p class="author">- Sarah M.</p>
-            </div>
-            <div class="testimonial">
-                <p>"AceThetics offers the best clothing options for both formal and casual events. Highly recommended!"</p>
-                <p class="author">- John D.</p>
-            </div>
+          <!--SKILLSSS-->
+          
+<section class="skills section" id="skills">
+    <h2 class="section-title">Graphic Design Skills</h2>
+    <div class="skills-container bd-grid">
+      <div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">Adobe Photoshop</span>
+          </div>
         </div>
-    </section>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">Adobe Illustrator</span>
+          </div>
+        </div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">Adobe InDesign</span>
+          </div>
+        </div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">Typography</span>
+          </div>
+        </div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">Color Theory</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">User Interface (UI) Design</span>
+          </div>
+        </div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">User Experience (UX) Design</span>
+          </div>
+        </div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">Adobe XD</span>
+          </div>
+        </div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">Sketch</span>
+          </div>
+        </div>
+        <div class="skills-data">
+          <div class="skills-names">
+            <span class="skills-name">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="blog" class="section">
-        <div class="container">
-            <h2>Blog</h2>
-            <!-- Blog Posts -->
-        </div>
-    </section>
+  <!--PROJECTS-->
+  <section class="projects section" id="projects">
+    <h2 class="section-title">Projects</h2>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>For inquiries or assistance, please contact us:</p>
-            <p>Email: info@acethetics.com</p>
-            <p>Phone: 123-456-7890</p>
-            <p>Operating Hours: Monday - Friday: 9am - 6pm</p>
-        </div>
-    </section>
+    <div class="project-container">
+      <div class="project-img">
+        <img src="assets/img/01.png" alt="cult.fit" />
+        <p class="project-title">MedPlusMart.com clone</p>
+        <p class="project-subtitle">
+          A web application to buy medicines online by uploading the prescriptions.
+          Features:
+          User authentication
+          Prescription upload feature. <br />
+          <br />
+          A collaborative project, built in 4 days by a team of 6 developers
+          . <br />
+          <br />HTML | CSS | DOM
+        </p>
+      </div>
 
-    <footer>
-        <div class="container">
-            <ul class="social-links">
-                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
-            </ul>
-            <p>&copy; 2023 AceThetics. All rights reserved.</p>
+
+      <div class="project-img">
+        <img src="assets/img/epic.png" alt="Reddit.com" />
+        <p class="project-title">Epicgames.com clone</p>
+        <p class="project-subtitle">
+          Epic Games, Inc. is an American video game and publisher website. <br />
+          <br />
+          A collaborative project built by a team of 6, executed in 5 days.
+          <br />
+          <br /> HTML | CSS | Javascript | Node | Express | MongoDB
+        </p>
+      </div>
+
+      <div class="project-img">
+        <img src="assets/img/youtube.PNG" alt="cult.fit" />
+        <p class="project-title">Youtube clone</p>
+        <p class="project-subtitle">
+          A web application which is just cpoy of Youtube.
+          <br />
+          <br />
+          It is Individual Project build by Me.
+          . <br />
+          <br />HTML | CSS | DOM
+        </p>
+      </div>
+      
+      <div class="project-img">
+        <img src="assets/img/portfolio.PNG" alt="cult.fit" />
+        <p class="project-title">Portfolio</p>
+        <p class="project-subtitle">
+          A portfolio web application.
+          <br />
+          <br />
+          It is Individual Project build by Me.
+          . <br />
+          <br />HTML | CSS | DOM
+        </p>
+      </div>
+
+      <div class="project-img">
+        <img src="assets/img/swiggy.jpg" alt="Swiggy.com" />
+        <p class="project-title">Swiggy clone</p>
+        <p class="project-subtitle">
+          Swiggy is food ordering and delivery service provider in all over india from your nearest Hotels.
+          <br />
+          <br />
+          A collaborative project built by a team of 4, executed in 4 days.
+          <br />
+          <br />
+          React | Redux | Node | Express | MongoDB
+        </p>
+      </div>
+
+      <div class="project-img">
+        <img src="assets/img/Tinde-chat.png" alt="Tinde chat" />
+        <p class="project-title">
+          Tinde Chat
+        </p>
+        <p class="project-subtitle">
+          Tinde Chat, it's chat application you can connect and chat with others.
+          
+          <br />
+          <br />
+          A collaborative project built by a team of 3, executed in 3 days.
+          <br />
+          <br />
+         React | Redux | Node | Express | MongoDB
+        </p>
+      </div>
+
+      <div class="project-img">
+        <img src="assets/img/Redux-shop.PNG" alt="shop app" />
+        <p class="project-title">
+          Shopping App
+        </p>
+        <p class="project-subtitle">
+          It's two Page Shopping app using React Redux.
+          
+          <br />
+          <br />
+          Its Individual project built by me.
+          <br />
+          <br />
+         React | Redux | Rest API
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <!--FOOTER-->
+    <footer class="footer section" id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="footer-title">Azrul Azri</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/azrul-azri-0974161a3/" target="_blank" class="footer-icon"><i
+              class="bx bxl-linkedin">
+              <br />
+              LinkedIn</i></a>
+          <a href="https://twitter.com/Ajerul8" target="_blank" class="footer-icon"><i class="bx bxl-twitter">
+              <br />
+              Twitter</i></a>
+          <a href="zerolzeri07@gmail.com" target="_blank" class="footer-icon"><i class="bx bx-mail-send">
+              <br />
+              E-mail</i></a>
+          <a href="tel:011-2818 0058" target="_blank" class="footer-icon"><i class="bx bx-phone">
+              <br />
+              Phone</i></a>
+          <a href="https://github.com/Ajerulz" target="_blank" class="footer-icon"><i
+                class="bx bxl-github">
+              <br />
+              GitHub
+              </i></a>
         </div>
-    </footer>
+        <p>&#169; 2024 copyright all right reserved</p>
+      </footer>
 </body>
 </html>
