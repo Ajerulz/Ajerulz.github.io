@@ -213,12 +213,12 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: absolute ; /* Set the parent container to relative positioning */
-  margin-top: 100px;
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+  margin-top: 50px;
 }
 .home-data {
   margin-left: 40%;
-  margin-top: 30px;
 }
 .home-title {
   font-size: var(--big-font-size);
