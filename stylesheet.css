@@ -55,6 +55,9 @@
 html {
   scroll-behavior: smooth;
 }
+.l-main{
+  margin-top: 300px;
+}
 body {
   background-color: rgb(241, 241, 241);
   margin: var(--header-height) 0 0 0;
@@ -100,9 +103,6 @@ img {
 
 
 /*===== CLASS CSS ===== */
-.l-main{
-  margin-top: 300px;
-}
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -216,8 +216,8 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: relative;
-  margin-top: -600px;
+  position: relative; /* Set the parent container to relative positioning */
+  margin-top: -300px;
 }
 .home-data {
   margin-left: 40%;
@@ -278,7 +278,6 @@ section.about {
 .about-container {
   row-gap: 2rem;
   text-align: center;
-  margin-top: 100px;
 }
 .about-subtitle {
   margin-bottom: var(--mb-2);
