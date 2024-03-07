@@ -55,9 +55,6 @@
 html {
   scroll-behavior: smooth;
 }
-.l-main{
-  margin-top: 300px;
-}
 body {
   background-color: rgb(241, 241, 241);
   margin: var(--header-height) 0 0 0;
@@ -216,8 +213,8 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: relative; /* Set the parent container to relative positioning */
-  margin-top: -300px;
+  position: relative; 
+  margin-top: -100px;
 }
 .home-data {
   margin-left: 40%;
