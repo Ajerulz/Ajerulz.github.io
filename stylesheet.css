@@ -213,7 +213,7 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: relative; /* Set the parent container to relative positioning */
+  position: absolute ; /* Set the parent container to relative positioning */
   margin-top: 100px;
 }
 .home-data {
