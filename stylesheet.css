@@ -218,6 +218,7 @@ img {
 }
 .home-data {
   margin-left: 40%;
+  margin-top: 100px;
 }
 .home-title {
   font-size: var(--big-font-size);
