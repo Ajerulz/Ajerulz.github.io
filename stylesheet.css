@@ -215,7 +215,6 @@ img {
 .home {
   height: calc(100vh - 3rem);
   row-gap: 1rem;
-  margin-top: 50px;
 }
 .home-data {
   margin-left: 40%;
