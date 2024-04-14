@@ -10,11 +10,12 @@
 }
 
 :root {
-  --body-font: "Bebas Neue", sans-serif;
+  --body-font: "Cabin", sans-serif;
+  font-optical-sizing: auto;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
-  letter-spacing: 0.07rem;
+  letter-spacing: -0.005rem;
 }
 @media screen and (min-width: 768px) {
   :root {
