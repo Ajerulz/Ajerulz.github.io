@@ -16,132 +16,125 @@
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"><script src="main.js"></script>
     <title>Azrul Azri</title>
 </head>
 
 
 <body>
-    <header class="l-header">
-        <nav class="nav bg-grid">
-          <div>
-            <a href="#home" class="nav-logo"><img src="img/AzrulLogo.png" height="70px" alt="H" /></a>
+  <header class="l-header">
+    <nav class="nav bg-grid">
+      <div>
+        <a href="#home" class="nav-logo"><img src="img/AzrulLogo.png" height="70px" alt="H" /></a>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link about">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href = "#" onclick="darkMode()">☼</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+    </nav>
+  </header>
+
+<main class="l-main">
+  <section class="home bd-grid section" id="home">
+      <div class="home-data">
+          <h2 class="home-title">
+              Hello,<br />I am <span class="home-title-color">Azrul Azri Azmi</span><br />
+              <span id="jobTitle">Graphic Designer</span> 
+          </h2>
+  
+          <div class="centered-button">
+              <a href="https://drive.google.com/file/d/1H08bwDDtPX0422uX1svMEH1xnSEEX1Zt/view?usp=sharing" target="_blank" class="button">Resume</a>
           </div>
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                  <li class="nav-item">
-                    <a href="#home" class="nav-link home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#about" class="nav-link about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#skills" class="nav-link skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#projects" class="nav-link projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#contact" class="nav-link contact">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href = "#" onclick="darkMode()">☼</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="nav-toggle" id="nav-toggle">
-                <i class="bx bx-menu"></i>
-              </div>
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <!--HOME-->>
-        <section class="home bd-grid section" id="home">
-            <div class="home-data">
-                <h2 class="home-title">
-                    Hello,<br />I am <span class="home-title-color">Azrul Azri Azmi</span><br />
-                    <span id="jobTitle">Graphic Designer</span> 
-                </h2>
-        
-                <div class="centered-button">
-                    <a href="https://drive.google.com/file/d/1H08bwDDtPX0422uX1svMEH1xnSEEX1Zt/view?usp=sharing" target="_blank" class="button">Resume</a>
-                </div>
-                
-                <div class="home-social">
-                    <a href="https://www.linkedin.com/in/azrul-azri-0974161a3/" target="_blank" class="home-social-icon"><i class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/Ajerulz" target="_blank" class="home-social-icon"><i class="bx bxl-github"></i></a>
-                </div>
-            </div>
-        
-            <div class="home-img">
-                <img src="img/profile.jpeg" alt="" width="auto" height="auto"/>
-            </div>
-        </section>
-        
-        
-        
           
+          <div class="home-social">
+              <a href="https://www.linkedin.com/in/azrul-azri-0974161a3/" target="_blank" class="home-social-icon"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/Ajerulz" target="_blank" class="home-social-icon"><i class="bx bxl-github"></i></a>
+          </div>
+      </div>
+  
+      <div class="home-img">
+          <img src="img/profile.jpeg" alt="" width="auto" height="auto"/>
+      </div>
+  </section>    
 
-        <!--ABOUT-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-      
-            <div class="about-container bd-grid">
-              <div class="about-img">
-                <img src="img/profile2.jpeg" alt="" />
-              </div>
-      
-              <div style="text-align: center">
-                <h2 class="about-subtitle">I am Azrul Azri</h2>
-                <p class="about-text">
-                    As a dynamic and innovative creative designer, I offer a unique blend of artistic flair, 
-                    technical proficiency, and a relentless drive for excellence. With a passion for pushing 
-                    boundaries and a track record of delivering outstanding results, I thrive on challenges 
-                    and am dedicated to exceeding client expectations.
-                </p>
-                <br />
-                
-                <p>
-                    get in touch through >zerolzeri07@gmail.com
-                    <i style="color: #4070f4; font-size: 1.2rem; cursor: pointer" class="bx bx-copy" id="copy"></i>
-                </p>
-              </div>
-            </div>
-          </section>
+<!--ABOUT-->
+<section class="about section" id="about">
+    <h2 class="section-title">About</h2>
 
-          <!--EDUCATION-->
-            <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
-                <div class="education-container bd-grid">
-            
-                <div class="education-data">
-                    <div class="education-names">
-                    <!-- <i class="bx bxl-html5 skills-icon"></i> -->
-                    <span class="education-name">BSC (hons) Multimedia Computing</span> 
-                    <p class="education-platform ">Liverpool John Moores University @ YPC International College</p>
-                    <p class="education-duration ">2020 - Present</p>
+    <div class="about-container bd-grid">
+      <div class="about-img">
+        <img src="img/profile2.jpeg" alt="" />
+      </div>
+
+      <div style="text-align: center">
+        <h2 class="about-subtitle">I am Azrul Azri</h2>
+        <p class="about-text">
+            As a dynamic and innovative creative designer, I offer a unique blend of artistic flair, 
+            technical proficiency, and a relentless drive for excellence. With a passion for pushing 
+            boundaries and a track record of delivering outstanding results, I thrive on challenges 
+            and am dedicated to exceeding client expectations.
+        </p>
+        <br />
         
-                    </div>
-                </div>
-                </div>
-                <div class="education-container bd-grid">
-            
-            <div class="education-data">
-                <div class="education-names">
-                <!-- <i class="bx bxl-html5 skills-icon"></i> -->
-                <span class="education-name">SPM</span>
-                <p class="education-platform ">SMK (L) Methodist Jalan Hang Jebat</p>
-                <p class="education-duration ">2015 - 2019</p>
-                </div>
-            </div>
-            </div>
-          </section>
+        <p>
+            get in touch through >zerolzeri07@gmail.com
+            <i style="color: #4070f4; font-size: 1.2rem; cursor: pointer" class="bx bx-copy" id="copy"></i>
+        </p>
+      </div>
+    </div>
+  </section>
 
-          <!--SKILLSSS-->
-          
+<!--EDUCATION-->
+<section class="education section" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-container bd-grid">
+
+    <div class="education-data">
+        <div class="education-names">
+        <!-- <i class="bx bxl-html5 skills-icon"></i> -->
+        <span class="education-name">BSC (hons) Multimedia Computing</span> 
+        <p class="education-platform ">Liverpool John Moores University @ YPC International College</p>
+        <p class="education-duration ">2020 - Present</p>
+
+        </div>
+    </div>
+    </div>
+    <div class="education-container bd-grid">
+
+<div class="education-data">
+    <div class="education-names">
+    <!-- <i class="bx bxl-html5 skills-icon"></i> -->
+    <span class="education-name">SPM</span>
+    <p class="education-platform ">SMK (L) Methodist Jalan Hang Jebat</p>
+    <p class="education-duration ">2015 - 2019</p>
+    </div>
+</div>
+</div>
+</section>
+
+<!--SKILLSSS-->          
 <section class="skills section" id="skills">
     <h2 class="section-title">Graphic Design Skills</h2>
     <div class="skills-container bd-grid">
@@ -208,7 +201,7 @@
 
     <div class="project-container">
       <div class="project-img">
-        <img src="img/FontPoster.png"/>
+        <img src="img/FontPoster.png" alt="Garamond Graphic Poster" />
         <p class="project-title">Garamond Font Poster</p>
         <p class="project-subtitle">
           A poster about a font type which is widely used in world nowadays. 
@@ -224,7 +217,7 @@
 
 
       <div class="project-img">
-        <img src="img/Poster1.jpg"/>
+        <img src="img/Poster1.jpg" alt="Fight Graphic Poster" />
         <p class="project-title">Fight Poster</p>
         <p class="project-subtitle">
           A retro style poster with line neon graphics and fonts<br />
@@ -236,7 +229,7 @@
       </div>
 
       <div class="project-img">
-        <img src="img/GraphicDrawing.png"/>
+        <img src="img/GraphicDrawing.png" alt="Vine Skull Graphic Art" />
         <p class="project-title">Vine Skull</p>
         <p class="project-subtitle">
           A garphic art representing nature in death.
@@ -249,7 +242,7 @@
       </div>
       
       <div class="project-img">
-        <img src="img/Poster4.jpg"/>
+        <img src="img/Poster4.jpg" alt="Temporary Graphic Poster" />
         <p class="project-title">Everything is Temporary</p>
         <p class="project-subtitle">
           Retro style poster with line art graphics.
@@ -262,7 +255,7 @@
       </div>
 
       <div class="project-img">
-        <img src="img/Poster2.jpg"/>
+        <img src="img/Poster2.jpg" alt="Space Graphic Poster" />
         <p class="project-title">Space</p>
         <p class="project-subtitle">
           An art represent a hollow emptiness within ourselves which I call the "space"
@@ -277,7 +270,7 @@
       </div>
 
       <div class="project-img">
-        <img src="img/Poster3.jpg"/>
+        <img src="img/Poster3.jpg" alt="Walk Through Fire Graphic Art" />
         <p class="project-title">Walk Through the Fire</p>
         <p class="project-subtitle">
           A typography design for shirt printing targeting skateboarder youth. 
